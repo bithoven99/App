@@ -1,0 +1,73 @@
+  public boolean is00db(DataInputStream dataInputStream)throws IOException{
+        test=new byte[4];
+        dataInputStream.reset();
+
+        int j=0;
+        test[j]=dataInputStream.readByte();
+        test[j+1]=dataInputStream.readByte();
+        test[j+2]=dataInputStream.readByte();
+        test[j+3]=dataInputStream.readByte();
+        word=new String(test);
+        if(word.equals("00db")){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public boolean is01wb(DataInputStream dataInputStream)throws IOException{
+        test=new byte[4];
+        dataInputStream.reset();
+
+        int j=0;
+        test[j]=dataInputStream.readByte();
+        test[j+1]=dataInputStream.readByte();
+        test[j+2]=dataInputStream.readByte();
+        test[j+3]=dataInputStream.readByte();
+        word=new String(test);
+        if(word.equals("01wb")){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public boolean is00dc(DataInputStream dataInputStream)throws IOException{
+        dataInputStream.reset();
+
+        test=new byte[4];
+        int j=0;
+        test[j]=dataInputStream.readByte();
+        test[j+1]=dataInputStream.readByte();
+        test[j+2]=dataInputStream.readByte();
+        test[j+3]=dataInputStream.readByte();
+        word=new String(test);
+        if(word.equals("00dc")){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     Message message=Message.obtain();
+                            Bundle bundle=new Bundle();
+                            bundle.putByteArray("byte",videoframedata);
+                            message.setData(bundle);
+                            handler.sendMessage(message);

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/musicback"
+
+    tools:context=".Musicview"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <TextView
+        android:id="@+id/soundname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.gauravk.audiovisualizer.visualizer.BarVisualizer xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/Bar"
+        android:layout_width="416dp"
+        android:layout_height="229dp"
+        android:layout_marginBottom="79dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="79dp"
+        custom:avColor="@color/Barcolor"
+        custom:avDensity="0.8"
+        custom:avSpeed="normal"
+        custom:avType="fill"
+        custom:layout_constraintBottom_toTopOf="@+id/seekBar"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toTopOf="parent"
+        custom:layout_constraintVertical_bias="1.0" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/resume"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/currenttime" />
+
+    <Button
+        android:id="@+id/resume"
+        android:layout_width="40dp"
+        android:layout_height="41dp"
+        android:background="@drawable/play"
+        android:onClick="btn_pause"
+        app:layout_constraintBaseline_toBaselineOf="@+id/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="48dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginStart="77dp"
+        android:background="@drawable/button1"
+        android:onClick="btn_back"
+        app:layout_constraintBaseline_toBaselineOf="@+id/resume"
+        app:layout_constraintEnd_toEndOf="@+id/resume"
+        app:layout_constraintStart_toStartOf="@+id/seekBar" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="48dp"
+        android:layout_height="35dp"
+
+        android:layout_marginBottom="81dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginStart="79dp"
+        android:background="@drawable/forward"
+        android:onClick="btn_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar"
+        app:layout_constraintStart_toStartOf="@+id/resume" />
+
+    <TextView
+        android:id="@+id/currenttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="186dp"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/totaltime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar" />
+
+
+</android.support.constraint.ConstraintLayout>

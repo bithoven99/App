@@ -1,0 +1,249 @@
+@startuml
+
+title __APP's Class Diagram__\n
+
+  namespace android.arch.core {
+    class android.arch.core.R {
+    }
+  }
+  
+
+  namespace android.arch.lifecycle {
+    class android.arch.lifecycle.R {
+    }
+  }
+  
+
+  namespace android.arch.lifecycle {
+    namespace livedata.core {
+      class android.arch.lifecycle.livedata.core.R {
+      }
+    }
+  }
+  
+
+  namespace android.arch.lifecycle {
+    namespace viewmodel {
+      class android.arch.lifecycle.viewmodel.R {
+      }
+    }
+  }
+  
+
+  namespace android.support.compat {
+    class android.support.compat.R {
+    }
+  }
+  
+
+  namespace android.support.constraint {
+    class android.support.constraint.R {
+    }
+  }
+  
+
+  namespace android.support.coreui {
+    class android.support.coreui.R {
+    }
+  }
+  
+
+  namespace android.support.coreutils {
+    class android.support.coreutils.R {
+    }
+  }
+  
+
+  namespace android.support.design {
+    class android.support.design.R {
+    }
+  }
+  
+
+  namespace android.support.fragment {
+    class android.support.fragment.R {
+    }
+  }
+  
+
+  namespace android.support.graphics.drawable {
+    class android.support.graphics.drawable.R {
+    }
+  }
+  
+
+  namespace android.support.graphics.drawable {
+    namespace animated {
+      class android.support.graphics.drawable.animated.R {
+      }
+    }
+  }
+  
+
+  namespace android.support.mediacompat {
+    class android.support.mediacompat.R {
+    }
+  }
+  
+
+  namespace android.support.transition {
+    class android.support.transition.R {
+    }
+  }
+  
+
+  namespace android.support.v4 {
+    class android.support.v4.R {
+    }
+  }
+  
+
+  namespace android.support.v7.appcompat {
+    class android.support.v7.appcompat.R {
+    }
+  }
+  
+
+  namespace android.support.v7.recyclerview {
+    class android.support.v7.recyclerview.R {
+    }
+  }
+  
+
+  namespace com.gauravk.audiovisualizer {
+    class com.gauravk.audiovisualizer.R {
+    }
+  }
+  
+
+  namespace com.see.asus.sa3ed3amer {
+    class com.see.asus.sa3ed3amer.BuildConfig {
+    }
+  }
+  
+
+  namespace com.see.asus.sa3ed3amer {
+    class com.see.asus.sa3ed3amer.FileConversionTool {
+    }
+  }
+  
+
+  namespace com.see.asus.sa3ed3amer {
+    class com.see.asus.sa3ed3amer.Getmp3files {
+    }
+  }
+  
+
+  namespace com.see.asus.sa3ed3amer {
+    class com.see.asus.sa3ed3amer.Getmp4files {
+    }
+  }
+  
+
+  namespace com.see.asus.sa3ed3amer {
+    class com.see.asus.sa3ed3amer.Getwavfiles {
+    }
+  }
+  
+
+  namespace com.see.asus.sa3ed3amer {
+    class com.see.asus.sa3ed3amer.Help {
+    }
+  }
+  
+
+  namespace com.see.asus.sa3ed3amer {
+    class com.see.asus.sa3ed3amer.MainActivity {
+    }
+  }
+  
+
+  namespace com.see.asus.sa3ed3amer {
+    class com.see.asus.sa3ed3amer.Musicplaylist {
+    }
+  }
+  
+
+  namespace com.see.asus.sa3ed3amer {
+    class com.see.asus.sa3ed3amer.Musicview {
+    }
+  }
+  
+
+  namespace com.see.asus.sa3ed3amer {
+    class com.see.asus.sa3ed3amer.Playlists {
+    }
+  }
+  
+
+  namespace com.see.asus.sa3ed3amer {
+    class com.see.asus.sa3ed3amer.R {
+    }
+  }
+  
+
+  namespace com.see.asus.sa3ed3amer {
+    class com.see.asus.sa3ed3amer.SavedItems {
+    }
+  }
+  
+
+  namespace com.see.asus.sa3ed3amer {
+    class com.see.asus.sa3ed3amer.SavedPL {
+    }
+  }
+  
+
+  namespace com.see.asus.sa3ed3amer {
+    class com.see.asus.sa3ed3amer.SplachScreen {
+    }
+  }
+  
+
+  namespace com.see.asus.sa3ed3amer {
+    class com.see.asus.sa3ed3amer.Vedioview {
+    }
+  }
+  
+
+  namespace com.see.asus.sa3ed3amer {
+    class com.see.asus.sa3ed3amer.mediainfo {
+    }
+  }
+  
+
+  namespace com.see.asus.sa3ed3amer {
+    class com.see.asus.sa3ed3amer.playlistitem {
+    }
+  }
+  
+
+  com.see.asus.sa3ed3amer.FileConversionTool -up-|> android.support.v7.app.AppCompatActivity
+  com.see.asus.sa3ed3amer.FileConversionTool o-- com.see.asus.sa3ed3amer.Getmp3files : mp3
+  com.see.asus.sa3ed3amer.FileConversionTool o-- com.see.asus.sa3ed3amer.Getmp4files : mp4
+  com.see.asus.sa3ed3amer.FileConversionTool o-- com.see.asus.sa3ed3amer.Getwavfiles : wav
+  com.see.asus.sa3ed3amer.Help -up-|> android.support.v7.app.AppCompatActivity
+  com.see.asus.sa3ed3amer.MainActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.see.asus.sa3ed3amer.MainActivity o-- com.see.asus.sa3ed3amer.FileConversionTool : fct
+  com.see.asus.sa3ed3amer.MainActivity o-- com.see.asus.sa3ed3amer.Getmp3files : mp3
+  com.see.asus.sa3ed3amer.MainActivity o-- com.see.asus.sa3ed3amer.Getmp4files : mp4
+  com.see.asus.sa3ed3amer.MainActivity o-- com.see.asus.sa3ed3amer.Getwavfiles : wav
+  com.see.asus.sa3ed3amer.Musicplaylist -up-|> android.support.v7.app.AppCompatActivity
+  com.see.asus.sa3ed3amer.Musicview -up-|> android.support.v7.app.AppCompatActivity
+  com.see.asus.sa3ed3amer.Musicview o-- com.see.asus.sa3ed3amer.Getmp3files : mp3
+  com.see.asus.sa3ed3amer.Musicview o-- com.see.asus.sa3ed3amer.Getwavfiles : wav
+  com.see.asus.sa3ed3amer.Playlists -up-|> android.support.v7.app.AppCompatActivity
+  com.see.asus.sa3ed3amer.SplachScreen -up-|> android.support.v7.app.AppCompatActivity
+  com.see.asus.sa3ed3amer.Vedioview -up-|> android.support.v7.app.AppCompatActivity
+  com.see.asus.sa3ed3amer.Vedioview o-- com.see.asus.sa3ed3amer.Getmp4files : mp4
+  com.see.asus.sa3ed3amer.playlistitem .up.|> Serializable
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

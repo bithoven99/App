@@ -1,0 +1,9 @@
+*When you open the app, your videos will appear in the background ...
+
+*When you click on the music, the music content will be displayed in the background and you can enjoy listening to it.
+
+*When you click on playlists, the created playlists will appear. You can add a new playlist by clicking the "+" button.
+
+*In the main window, when you press "+", the following options will appear:
+
+"?" A button to help identify the application and the share button that enables you to share the application ... Enjoy
